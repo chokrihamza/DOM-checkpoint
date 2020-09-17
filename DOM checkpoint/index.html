@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags to make it mobile responsive-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <!--header de la partie shopping online -->
+    <section class="container-fluid  bg-transparent ">
+
+
+      <nav class="fixed-top row navbar  navbar-expand-lg  bg-warning ">
+        <a class=" col-sm-6 navbar-brand text-danger" href="#">MEN'S JEANS & TROUSERS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" col-sm-6 justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-info" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Pricing</a>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!--Carrousel d'indication shopping -->
+      <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000"
+          widh="100%">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/hugo-boss.svg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/boss-3.svg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./images/hugo-boss-woman.svg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+      <!--ajout des cartes shopping-->
+      <div class="row text-center py-5">
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+          <div class="card  border-dark mb-3" ">
+            <button type=" button " class=" close btn btn-warning" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£50.00</h4>
+              <p class="card-text ">Richa Motorcycle Trousers Black Size: M</p>
+              <button type="button" class="btn btn-outline-danger " data-toggle="modal" data-target="#ShopeModal">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Richa Motorcycle Trousers Black Size: M</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £50.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o  " aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square " aria-hidden="true"></i>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top " src="./images/1.jpg" alt="Card image cap">
+            <div class="card-body  ">
+              <h4 class="card-title">£40.00</h4>
+              <p class="card-text">Firetrap Jeans Blue Size: 32"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal1">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Firetrap Jeans Blue Size: 32"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £40.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£50.00</h4>
+              <p class="card-text">Etienne Ozeki Jeans Grey Size: 32"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal2">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Etienne Ozeki Jeans Grey Size: 32"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £50.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£12.99</h4>
+              <p class="card-text">M&S Collection Jeans Grey NWOT Size:40</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal3">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">M&S Collection Jeans Grey NWOT Size:40</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £12.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center py-5">
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£25.00</h4>
+              <p class="card-text">Working Class Hero Jeans Blue Size: 34"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal4">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Working Class Hero Jeans Blue Size: 34"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £25.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="images/6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£12.99</h4>
+              <p class="card-text">"M&S Collection Jeans Grey NWOT Size: 40"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal5">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">"M&S Collection Jeans Grey NWOT Size: 40"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £12.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="images/7.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£8.99</h4>
+              <p class="card-text">Marks & Spencer Casual Trousers Dark Pink Size: 38"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal6">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Marks & Spencer Casual Trousers Dark Pink Size: 38"
+                      </h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £8.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="images/8.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£9.99</h4>
+              <p class="card-text">Crane Sports Insulated Trail Pants Olive green Size: 34"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal7">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Crane Sports Insulated Trail Pants Olive green
+                        Size: 34"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £9.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center py-5">
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/9.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£8.99</h4>
+              <p class="card-text">NWOT Marks& Spencer Collection Straight Fit Trousers Camel Size: 32"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal8">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">NWOT Marks& Spencer Collection Straight Fit
+                        Trousers Camel Size: 32"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £8.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="images/10.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£39.99</h4>
+              <p class="card-text">BKS Motorbike Motorcycle Kevlar Denim Jeans Blue Trousers Size: 38"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal9">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">BKS Motorbike Motorcycle Kevlar Denim Jeans Blue
+                        Trousers Size: 38"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £39.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="images/11.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£45.00</h4>
+              <p class="card-text">Hugo Boss Orange 63 Slim Fit Jeans Blue BNWT Size: 32"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal10">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Hugo Boss Orange 63 Slim Fit Jeans Blue BNWT Size:
+                        32"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £45.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/12.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£25.00</h4>
+              <p class="card-text">Rohan Trousers Beige Size: 32"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal11">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Rohan Trousers Beige Size: 32"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £25.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center py-5">
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/13.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£75.00</h4>
+              <p class="card-text">Prada Trouser Red Size: 46"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal12">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Prada Trouser Red Size: 46"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      >£75.00
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/14.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£15.99</h4>
+              <p class="card-text">ASOS NEW Party/Wedding Trousers Multi-coloured Size: 30"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal13">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal13" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">ASOS NEW Party/Wedding Trousers Multi-coloured
+                        Size: 30"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £15.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/15.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£11.99</h4>
+              <p class="card-text">Chums Stretchy Jeans Navy blue Size: 32"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal14">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal14" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Chums Stretchy Jeans Navy blue Size: 32"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £11.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o" aria-hidden="true"></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <div class="card border-dark mb-3">
+            <button type="button " class="close btn btn-warning" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img class="card-img-top" src="./images/16.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">£29.99</h4>
+              <p class="card-text">Unbranded Tartan Trousers Purple Size: 34"</p>
+              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#ShopeModal15">Buy
+                Now</button>
+              <!--Modal start form this point-->
+              <!-- Modal -->
+              <div class="modal fade" id="ShopeModal15" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">RUnbranded Tartan Trousers Purple Size: 34"</h5>
+
+                    </div>
+                    <div class="modal-body">
+                      £29.99
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End off Modal-->
+              <h1><i class="fa fa-heart"></i></h1>
+              <div class="d-flex justify-content-between">
+                <i class="fa fa-minus-square-o " aria-hidden="true" ></i> <span class="quantity">0</span><i class="fa fa-plus-square" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Foot the bill -->
+    <div class="jumbotron bg-info text-white text-center">
+      <h1 class="display-3 ">FOOT THE BILL</h1>
+      <p class="lead">The total Prices of the Articles is:</p>
+
+      <span id="price">0</span><span>£</span></br>
+      <a class="btn btn-primary btn-lg" href="#" role="button">GO to the Top</a>
+    </div>
+
+  
+
+     
+   
+  <!--   Optional JavaScript but it is better to add it-->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="shop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+  </body>
+
+</html>
